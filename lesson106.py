@@ -24,6 +24,30 @@ print('-'*80)
 l = [1,2,3,4,5]
 for element in l:
     print(element)
+print()
 
+# iterator = iter(l)
+# while True:
+#     element = next(iterator)
+#     print(element)
+# print()
 
+iterator = iter(l)
+try:
+    while True:
+        element = next(iterator)
+        print(element)
+except StopIteration:
+    print('Done iterating...')
+    pass
+print()
+
+iterator = iter(l)
+try:
+    while True:
+        element = next(iterator)
+        print(element)
+except StopIteration:
+    pass
+print()
 
