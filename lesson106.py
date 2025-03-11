@@ -18,6 +18,12 @@ print(next(iterator))
 print(next(iterator))
 #print(next(iterator))
 #print(next(iterator))
-print()
+print('-'*80)
+
+
+l = [1,2,3,4,5]
+for element in l:
+    print(element)
+
 
 
