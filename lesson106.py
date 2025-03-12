@@ -79,13 +79,19 @@ start = perf_counter()
 l = list(range(1_000_000))
 end = perf_counter()
 print(f'elapsed: {end - start}')
+del l
+print('-'*80)
 
 
-
-
-
-
-
+r = range(10)
+print(list(r))
+print(list(r))
+enum = enumerate('abc')
+print(list(enum))
+print(list(enum))
+#print(next(enum))
+print(list(enumerate('abc')))
+print()
 
 
 
