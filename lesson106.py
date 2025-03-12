@@ -64,5 +64,30 @@ for i in range(100_000_000):
     print(i)
     if i > 4:
         break
+print('-'*80)
+
+
+from time import perf_counter
+start = perf_counter()
+#l = range(100_000_000)
+l = range(1_000_000)
+end = perf_counter()
+print(f'elapsed: {end - start}')
+
+start = perf_counter()
+#l = list(range(100_000_000))  This line crashed the computer
+l = list(range(1_000_000))
+end = perf_counter()
+print(f'elapsed: {end - start}')
+
+
+
+
+
+
+
+
+
+
 
 
