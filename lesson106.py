@@ -49,5 +49,20 @@ try:
         print(element)
 except StopIteration:
     pass
-print()
+print('-'*80)
+
+r = range(10)
+print(r)
+r_iter = iter(r)
+print(next(r_iter))
+print(next(r_iter))
+print(next(r_iter))
+print(list(r_iter))
+r = range(100_000_000)
+
+for i in range(100_000_000):
+    print(i)
+    if i > 4:
+        break
+
 
