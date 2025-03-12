@@ -93,7 +93,7 @@ print(list(enum))
 print(list(enumerate('abc')))
 print()
 
-
+print(iter(enum) is enum)
 
 
 
