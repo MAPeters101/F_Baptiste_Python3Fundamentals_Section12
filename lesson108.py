@@ -54,5 +54,10 @@ print('-'*80)
 
 
 
+from timeit import timeit
+print(timeit('[i**2 for i in range(25_000_000)]', number=1))
+print(timeit('(i**2 for i in range(250_000_000_000))', number=1))
+
+
 
 
