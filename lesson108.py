@@ -46,3 +46,13 @@ squares = (i ** 2 for i in range(5))
 print(9 in squares)
 print('-'*80)
 
+
+squares = (i ** 2 for i in range(5))
+print(4 in squares)
+print(list(squares))
+print('-'*80)
+
+
+
+
+
